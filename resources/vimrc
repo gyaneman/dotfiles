@@ -21,6 +21,9 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'cohama/lexima.vim'
 
 call neobundle#end()
 
