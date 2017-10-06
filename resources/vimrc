@@ -30,8 +30,8 @@ call neobundle#end()
 colorscheme default
 let g:indent_guides_enable_on_vim_startup=1
 let g:indnet_guides_auto_colors=0
-hi IndentGuidesOdd  guibg=grey     ctermbg=grey
-hi IndentGuidesEven guibg=lightgry ctermbg=lightgrey
+hi IndentGuidesOdd  guibg=grey         ctermbg=grey
+hi IndentGuidesEven guibg=darkgrey     ctermbg=darkgrey
 
 
 
@@ -44,6 +44,8 @@ hi IndentGuidesEven guibg=lightgry ctermbg=lightgrey
 " Other cofigurations
 set number
 set title
+filetype plugin indent on
+set encoding=utf-8
 syntax on
 set tabstop=2
 set shiftwidth=2
