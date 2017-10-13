@@ -59,6 +59,7 @@ set laststatus=2
 set wildmenu
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 set showcmd
+set backspace=indent,eol,start
 
 
 
