@@ -33,6 +33,9 @@ let g:indnet_guides_auto_colors=0
 hi IndentGuidesOdd  guibg=grey         ctermbg=grey
 hi IndentGuidesEven guibg=darkgrey     ctermbg=darkgrey
 
+" c++
+let g:syntastic_cpp_compiler_options = '-std=c++14'
+
 
 
 
