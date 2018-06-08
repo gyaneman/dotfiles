@@ -48,6 +48,7 @@ filetype plugin indent on
 set encoding=utf-8
 syntax on
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 set expandtab
 set autoindent
@@ -70,3 +71,10 @@ hi Statement ctermfg=yellow
 hi PreProc ctermfg=cyan
 hi Constant ctermfg=red
 hi Type ctermfg=darkcyan
+
+
+
+
+""""""""""""""""""""""""
+" Filetype
+autocmd BufRead,BufNewFile *.java setfiletype java
