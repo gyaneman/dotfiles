@@ -9,3 +9,6 @@ mkdir -p $HOME/.vim/bundle
 if [ ! -d "$HOME/.vim/bundle/neobundle.vim" ] ; then
   git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 fi
+
+
+ln -sf $PWD/resources/vim/ftplugin/ $HOME/.vim/ftplugin
