@@ -20,7 +20,7 @@ alias lla="ls -al"
 
 ## oh-my-zsh
 if [[ -f "${HOME}/.zshrc.oh-my-zsh" ]] ; then
-  source .zshrc.oh-my-zsh
+  source ${HOME}/.zshrc.oh-my-zsh
 fi
 
 
