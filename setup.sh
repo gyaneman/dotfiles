@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/zsh
 
 ln -sf $PWD/resources/vimrc $HOME/.vimrc
 ln -sf $PWD/resources/zshrc $HOME/.zshrc
