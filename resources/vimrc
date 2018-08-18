@@ -24,6 +24,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'cohama/lexima.vim'
+NeoBundle 'rust-lang/rust.vim'
 
 call neobundle#end()
 
