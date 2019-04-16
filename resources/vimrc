@@ -11,20 +11,13 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-NeoBundle 'Shougo/vimproc', {
-  \ 'build' : {
-    \ 'windows' : 'make -f make_mingw32.mak',
-    \ 'mac'     : 'make -f make_mac.mak',
-    \ 'unix'    : 'make -f make_unix.mak',
-  \ },
-\ }
-NeoBundle 'Shougo/vimshell'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'fatih/vim-go'
 
 call neobundle#end()
 

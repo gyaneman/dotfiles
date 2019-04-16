@@ -44,6 +44,12 @@ if [[ -d "${NVS_HOME}" ]] ; then
   [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
 fi
 
+## golang
+export GOPATH="$HOME/.go"
+if [[ -d "${GOPAH}" ]] ; then
+  export PATH=$PATH:${GOPATH}/bin
+fi
+
 ## local
 if [[ -f "${HOME}/.zshrc.local" ]] ; then
   source ${HOME}/.zshrc.local
