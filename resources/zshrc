@@ -16,6 +16,8 @@ alias la="ls -a"
 alias lla="ls -al"
 
 export EDITOR="vim"
+export LESSCHARSET=utf-8
+
 
 
 
