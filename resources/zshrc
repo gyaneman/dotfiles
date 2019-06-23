@@ -17,6 +17,9 @@ alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -al"
 
+export EDITOR="vim"
+export LESSCHARSET=utf-8
+
 
 
 
@@ -36,6 +39,7 @@ fi
 
 ## rbenv
 if [[ -d "${HOME}/.rbenv" ]] ; then
+  export PATH=$PATH:${HOME}/.rbenv/bin
   eval "$(rbenv init -)"
 fi
 
@@ -43,6 +47,12 @@ fi
 export NVS_HOME="$HOME/.nvs"
 if [[ -f "${NVS_HOME}" ]] ; then
   [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
+fi
+
+## golang
+export GOPATH="$HOME/.go"
+if [[ -d "${GOPAH}" ]] ; then
+  export PATH=$PATH:${GOPATH}/bin
 fi
 
 ## local

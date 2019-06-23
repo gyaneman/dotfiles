@@ -1,8 +1,8 @@
-#!/usr/bin/zsh
+#!/bin/sh
 
 ln -sf $PWD/resources/vimrc $HOME/.vimrc
 ln -sf $PWD/resources/zshrc $HOME/.zshrc
-ln -sf $PWD/resources/gitconfig $HOME/.gitconfig
+#ln -sf $PWD/resources/gitconfig $HOME/.gitconfig
 
 mkdir -p $HOME/.vim/bundle
 
