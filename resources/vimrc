@@ -25,6 +25,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'leafgarland/typescript-vim'
 
 call neobundle#end()
 
@@ -65,6 +66,9 @@ set wildmenu
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 set showcmd
 set backspace=indent,eol,start
+set scrolloff=8
+set sidescrolloff=8
+set cursorline
 
 
 
@@ -118,4 +122,11 @@ endfor
 " Filetype
 autocmd BufRead,BufNewFile *.java setfiletype java
 
+
+
+""""""""""""""""""""""""
+" Local configurations
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
 
