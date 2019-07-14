@@ -3,30 +3,7 @@
 
 
 """"""""""""""""""""""""
-" NeoBundle
-
-"if has('vim_starting')
-"  set runtimepath+=~/.vim/bundle/neobundle.vim/
-"endif
-
-"call neobundle#begin(expand('~/.vim/bundle/'))
-
-"NeoBundle 'scrooloose/nerdtree'
-"NeoBundle 'nathanaelkane/vim-indent-guides'
-"NeoBundle 'scrooloose/syntastic'
-"NeoBundle 'itchyny/lightline.vim'
-"NeoBundle 'cohama/lexima.vim'
-"NeoBundle 'rust-lang/rust.vim'
-"NeoBundle 'fatih/vim-go'
-"NeoBundle 'octol/vim-cpp-enhanced-highlight'
-"NeoBundle 'leafgarland/typescript-vim'
-
-"call neobundle#end()
-
-"let g:indent_guides_enable_on_vim_startup=1
-"let g:indnet_guides_auto_colors=0
-"hi IndentGuidesOdd  guibg=grey         ctermbg=grey
-"hi IndentGuidesEven guibg=darkgrey     ctermbg=darkgrey
+" Plug
 
 call plug#begin()
 
@@ -105,7 +82,6 @@ set belloff=all
 
 
 
-
 """""""""""""""""""""
 " Color config
 colorscheme default
@@ -122,6 +98,13 @@ hi Type ctermfg=darkcyan
 autocmd BufRead,BufNewFile *.java setfiletype java
 
 
+
+
+""""""""""""""""""""""""
+" Local configurations
+if filereadable(expand('~/.vimrc.local'))
+  source ~/.vimrc.local
+endif
 
 
 """"""""""""""""""""""""

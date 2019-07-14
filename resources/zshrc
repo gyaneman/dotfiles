@@ -4,6 +4,8 @@ compinit
 
 
 export PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
+export EDITOR=vim
+export LESSCHARSET=utf-8
 
 ## Locale
 export LC_ALL="ja_JP.UTF-8"
@@ -43,7 +45,7 @@ fi
 
 ## nvs
 export NVS_HOME="$HOME/.nvs"
-if [[ -d "${NVS_HOME}" ]] ; then
+if [[ -f "${NVS_HOME}" ]] ; then
   [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
 fi
 

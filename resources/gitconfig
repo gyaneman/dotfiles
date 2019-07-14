@@ -1,5 +1,11 @@
 [user]
   name = "gyaneman"
-  email = "gyanexus7@gmail.com"
+  email = "taka4456950@gmail.com"
 [push]
   default = simple
+[core]
+  pager = less -cm
+  quotepath = false
+  editor = vim
+[color]
+  ui = true
