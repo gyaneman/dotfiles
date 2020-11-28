@@ -16,6 +16,8 @@ alias vi="vim"
 alias ll="ls -l"
 alias la="ls -a"
 alias lla="ls -al"
+alias pbcopy="xsel --clipboard --input"
+alias pbpaste="xsel --clipboard --output"
 
 export EDITOR="vim"
 export LESSCHARSET=utf-8
