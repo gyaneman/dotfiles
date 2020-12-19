@@ -4,7 +4,7 @@ compinit
 
 
 export PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:$PATH"
-export EDITOR=vim
+export EDITOR=nvim
 export LESSCHARSET=utf-8
 
 ## Locale
@@ -18,8 +18,8 @@ alias la="ls -a"
 alias lla="ls -al"
 alias pbcopy="xsel --clipboard --input"
 alias pbpaste="xsel --clipboard --output"
+alias vim="nvim"
 
-export EDITOR="vim"
 export LESSCHARSET=utf-8
 
 
