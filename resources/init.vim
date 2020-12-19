@@ -33,6 +33,17 @@ if dein#load_state('/home/kataoka/.cache/dein')
   " Install font from https://www.nerdfonts.com/font-downloads to use this.
   call dein#add('ryanoasis/vim-devicons')
 
+  " Rust
+  "   Install following packages to use these plugins.
+  "   - https://github.com/rust-lang/rustfmt
+  "   - https://github.com/racer-rust/racer
+  call dein#add('rust-lang/rust.vim')
+  let g:rustfmt_autosave = 1
+  set hidden
+  call dein#add('racer-rust/vim-racer')
+  let g:racer_cmd = "~/.cargo/bin/racer"
+  let g:racer_experimental_completer = 1
+
   " Required:
   call dein#end()
   call dein#save_state()
