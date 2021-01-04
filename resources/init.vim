@@ -44,6 +44,17 @@ if dein#load_state('/home/kataoka/.cache/dein')
   let g:racer_cmd = "~/.cargo/bin/racer"
   let g:racer_experimental_completer = 1
 
+  call dein#add('scrooloose/syntastic')
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
+  let g:syntastic_always_populate_loc_list = 1
+  let g:syntastic_auto_loc_list = 1
+  let g:syntastic_check_on_open = 1
+  let g:syntastic_check_on_wq = 0
+
+  "call map(dein#check_clean(), "delete(v:val, 'rf')")
+
   " Required:
   call dein#end()
   call dein#save_state()

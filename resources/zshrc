@@ -47,8 +47,8 @@ fi
 
 ## nvs
 export NVS_HOME="$HOME/.nvs"
-if [[ -f "${NVS_HOME}" ]] ; then
-  [ -s "$NVS_HOME/nvs.sh" ] && . "$NVS_HOME/nvs.sh"
+if [[ -d "${NVS_HOME}" ]] ; then
+  source ${NVS_HOME}/nvs.sh
 fi
 
 ## golang
